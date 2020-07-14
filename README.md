@@ -23,9 +23,9 @@ The folder structure should include, inside the **spotone** folder:
 
 Please make sure you adapt the **variables.py** script to your circumstances, namely the **DEFAULT_LOCATION** variable, which will be used throughout the whole protocol. This variable should be the folder from which you are running the scripts. No further changes should be needed.
 
-## Feature Extraction steps
+## Feature Extraction
 
-###PSSM features
+###PSSM features###
 Provided you have the **psiblast** installation on your own computer, you will need to split the input fasta file in individual fasta files with the individual chains and then run, for each of them, the following, in the terminal:
 
 ```
@@ -34,11 +34,11 @@ psiblast -query input_fasta.fasta -evalue 0.001 -num_iterations 3 -db path_to_nr
 
 Each of your unique **.fasta** files will generate an output **.pssm** file that you can then process into tables.
 
-###In-house features
+###In-house features###
 You need to run an input **.fasta** file with all the sequences, in this case **spotone.fasta** (in the *input_files* folder) with the **feature_extraction.py** script, which will output a **.csv** file with all the features for all the protein chains.
 
-###iFeature features
+###iFeature features###
 After you have download the iFeature, and put the folder in the same folder where you run your scripts, you can the **call_ifeature.py** script with the same fasta file you used to run the In-house features. This will output to the **results** folder a **.csv** file for each feature.
 
-###Join features
+###Join features###
 In the **input_files** folder, there is the **spoton.csv** file, which you can use to get the class, as described in Moreira, IS, *et al.*, 2017, pertaining the original "SpotOn" algorithm and dataset. After fetching the files, you need to stitch this table together to include the columns regarding the **PSSM**, **In-house** and **iFeature** features. The files used for the protocol steps are on the **datasets** folder.
