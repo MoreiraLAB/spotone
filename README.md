@@ -23,7 +23,7 @@ The folder structure should include, inside the **spotone** folder:
 
 Please make sure you adapt the **variables.py** script to your circumstances, namely the **DEFAULT_LOCATION** variable, which will be used throughout the whole protocol. This variable should be the folder from which you are running the scripts. No further changes should be needed.
 
-## Feature Extraction
+## Feature Extraction steps
 
 ###PSSM features
 Provided you have the **psiblast** installation on your own computer, you will need to split the input fasta file in individual fasta files with the individual chains and then run, for each of them, the following, in the terminal:
