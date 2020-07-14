@@ -42,3 +42,9 @@ After you have download the iFeature, and put the folder in the same folder wher
 
 ### Join features
 In the **input_files** folder, there is the **spoton.csv** file, which you can use to get the class, as described in Moreira, IS, *et al.*, 2017, pertaining the original "SpotOn" algorithm and dataset. After fetching the files, you need to stitch this table together to include the columns regarding the **PSSM**, **In-house** and **iFeature** features. The files used for the protocol steps are on the **datasets** folder.
+
+## Run all Machine Learning Models
+Use **spotone_all_models.py** to run default version of Extreme Randomized Trees, Multi-layer Perceptron (Neural Network), AdaBoosting and Support Vector Machine classifiers. Pick the best model to follow up.
+
+## Optmize the best model
+Use **spotone_best_model.py** to optmize, with Grid Search, the model you previously selected, as well as detect the best fine tuned amino acid type parameters.
