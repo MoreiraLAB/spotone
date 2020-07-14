@@ -259,12 +259,6 @@ def apply_ML(input_dataset, input_method, model_parameters, \
   """
   with open(final_model_name, 'wb') as f:
     pickle.dump(classifier, f)
-  
-  """
-  Store a summary of the results in a csv file
-  """ 
-  classifier_dataframe = pd.DataFrame(output_results, columns = output_header)
-  classifier_dataframe.to_csv("gridsearchbest.csv", index = False)
 
 """
 Define the datasets to be used
