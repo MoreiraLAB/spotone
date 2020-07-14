@@ -22,7 +22,6 @@ import numpy as np
 from numpy.random import seed
 import matplotlib
 import random
-from pycm import *
 import pickle
 from variables import ID_COLS, RANDOM_SEED, EVALUATION_TRAIN_FILE, \
                         EVALUATION_TEST_FILE, CLASS_DISTRIBUTION_FILE, \
