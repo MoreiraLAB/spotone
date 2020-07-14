@@ -184,7 +184,8 @@ def apply_ML(input_dataset, input_method, model_parameters, \
               output_name = "full_evaluation.csv",
               output_header = ["Dataset","subset","Accuracy","AUC","Precision","Recall","F1-score"], \
               adapted_class_name = "adapted_pred", verbose = False, split_threshold = 0.5, \
-              final_model_name = MODELS_LOCATION + SYSTEM_SEP + FINAL_MODEL + PKL_TERMINATION):
+              final_model_name = MODELS_LOCATION + SYSTEM_SEP + FINAL_MODEL + PKL_TERMINATION, \
+              output_name = "gridsearchbest.csv"):
   
   """
   Pipeline to deploy the machine learning models on the datasets provided
@@ -266,7 +267,7 @@ def apply_ML(input_dataset, input_method, model_parameters, \
   Store a summary of the results in a csv file
   """ 
   classifier_dataframe = pd.DataFrame(output_results, columns = output_header)
-  classifier_dataframe.to_csv("gridsearchbest.csv", index = False)
+  classifier_dataframe.to_csv(output_name, index = False)
 
 """
 Define the datasets to be used
