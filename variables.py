@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """
-Store overall usage variables for the Hot-spot determination project with neural networks
+Store overall usage variables for the Hot-spot determination with sequence only features
 """
 
 __author__ = "A.J. Preto"
