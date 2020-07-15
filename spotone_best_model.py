@@ -195,12 +195,8 @@ def apply_ML(input_dataset, input_method, model_parameters, \
   ids_train, ids_test, X_train, X_test, y_train, y_test = prepare_file_split(input_dataset)
   ids_test, ids_test_independent, X_test, X_test_independent, y_test, y_test_independent = train_test_split(ids_test, X_test, y_test, \
                                                                                              test_size = split_threshold, random_state = RANDOM_SEED)
-  #classifier = input_method
-  #classifier = GridSearchCV(input_method, model_parameters, n_jobs = -1, verbose = True, cv = 10)
-  classifier = ExtraTreesClassifier(n_estimators = 500, bootstrap = True, class_weight = "balanced_subsample")
+  classifier = GridSearchCV(input_method, model_parameters, n_jobs = -1, verbose = True, cv = 10)
   classifier.fit(X_train, y_train.values.ravel())
-  #print(classifier.best_params_)
-  #print(classifier.best_score_)
   train_pred = classifier.predict(X_train)
   test_pred = classifier.predict(X_test)
   train_scores = evaluation(y_train, train_pred).all_scores
