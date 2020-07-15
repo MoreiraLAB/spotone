@@ -279,7 +279,7 @@ Initialize the classification methods to be tested
 """
 ML_parameters = {"n_estimators":(50,100,250,500,1000), \
                 "bootstrap":[True,False], \
-                "class_weight":("balanced_subsample","balanced"), \
+                "class_weight":(None,"balanced_subsample","balanced"), \
                 "criterion": ("gini","entropy"), \
                 "max_depth":(None,1,2,3), \
                 "min_samples_split":(2,3,4,5), \
