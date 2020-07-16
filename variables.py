@@ -8,6 +8,7 @@ __author__ = "A.J. Preto"
 __email__ = "martinsgomes.jose@gmail.com"
 __group__ = "Data-Driven Molecular Design"
 __group_leader__ = "Irina S. Moreira"
+__group_leader__email__ = "irina.moreira@cnc.uc.pt"
 __project__ = "SPOTONE"
 
 """
@@ -46,32 +47,35 @@ INTERMEDIATE_SEP = "_"
 """
 Table associated variables
 """
-ID_COLS = ["0","1","2","3","4","5"]
+ID_COLS = ["0", "1", "2", "3", "4", "5"]
 CENTRED_FEATURES_WINDOWS = [2, 5, 7, 10, 25, 50, 75]
 SECTIONS_FEATURES_SPLITS = [100]
-FEATURES_HOLDER_COLS = ['Helix_propensity', 'Sheet_propensity', 'Helix_propensity_values', 'Sheet_propensity_values', 'MW', 'pka_carboxylate', 'pka_amine', 'pka_side_chain', 'C_number', 'H_number', 'N_number', 'O_number', 'S_number', 'Standard_area_free', 'Standard_area_protein', 'folded_buried_area', 'mean_fractional_area_loss', 'residue_mass', 'monoisotopic_mass']
+FEATURES_HOLDER_COLS = ['Helix_propensity', 'Sheet_propensity', 'Helix_propensity_values', 'Sheet_propensity_values',
+                        'MW', 'pka_carboxylate', 'pka_amine', 'pka_side_chain', 'C_number', 'H_number', 'N_number',
+                        'O_number', 'S_number', 'Standard_area_free', 'Standard_area_protein', 'folded_buried_area',
+                        'mean_fractional_area_loss', 'residue_mass', 'monoisotopic_mass']
 IFEATURE_FEATURES = ['AAC', 'CKSAAP', 'DPC', 'DDE', 'TPC',
-				'GAAC', 'CKSAAGP', 'GDPC', 'GTPC',
-				'NMBroto', 'Moran', 'Geary',
-				'CTDC', 'CTDT', 'CTDD', 'CTriad', 'KSCTriad', 'SOCNumber',
-				'QSOrder', 'PAAC', 'APAAC']
+                     'GAAC', 'CKSAAGP', 'GDPC', 'GTPC',
+                     'NMBroto', 'Moran', 'Geary',
+                     'CTDC', 'CTDT', 'CTDD', 'CTriad', 'KSCTriad', 'SOCNumber',
+                     'QSOrder', 'PAAC', 'APAAC']
 PSEUDO_IFEATURES = ['type1', 'type2', 'type3A', 'type3B', 'type4', 'type6A', 'type6B', 'type6C',
-								 'type7', 'type8', 'type9', 'type10', 'type11', 'type12', 'type14', 'type15',
-								 'type16']
+                    'type7', 'type8', 'type9', 'type10', 'type11', 'type12', 'type14', 'type15',
+                    'type16']
 IFEATURES_PCA_DICT = {'AAC': None, 'CKSAAP': 50, 'DPC': 40, 'DDE': 60, 'TPC': 100,
-				'GAAC': None, 'CKSAAGP' : 40, 'GDPC': None, 'GTPC': 40,
-				'NMBroto': 50, 'Moran': 50, 'Geary': 40,
-				'CTDC': 20, 'CTDT': 20, 'CTDD': 40, 'CTriad': 40, 'KSCTriad': 40, 'SOCNumber': 30,
-				'QSOrder': 30, 'PAAC': 30, 'APAAC': 30, 'type1': None, 'type2': None, 'type3A': None,
-				'type3B': 20, 'type4': None, 'type6A': None, 'type6B': None, 'type6C': None, 'type7': None,
-				'type8': None, 'type9': None, 'type10': None, 'type11': None, 'type12': None, 'type14': None,
-				'type15': None, 'type16': None}
+                      'GAAC': None, 'CKSAAGP': 40, 'GDPC': None, 'GTPC': 40,
+                      'NMBroto': 50, 'Moran': 50, 'Geary': 40,
+                      'CTDC': 20, 'CTDT': 20, 'CTDD': 40, 'CTriad': 40, 'KSCTriad': 40, 'SOCNumber': 30,
+                      'QSOrder': 30, 'PAAC': 30, 'APAAC': 30, 'type1': None, 'type2': None, 'type3A': None,
+                      'type3B': 20, 'type4': None, 'type6A': None, 'type6B': None, 'type6C': None, 'type7': None,
+                      'type8': None, 'type9': None, 'type10': None, 'type11': None, 'type12': None, 'type14': None,
+                      'type15': None, 'type16': None}
 CLASSES_DICT = {"NS": 0, "HS": 1}
 BASE_HEADER = ["CPX", "PDBChain", "PDBResNo", "PDBResName", "Classe"]
 AMINO_LIST = ['ASP', 'SER', 'GLN', 'LYS',
-                 'ILE', 'PRO', 'THR', 'CYS', 'PHE', 'ASN', 
-                 'GLY', 'HIS', 'LEU', 'ARG', 'TRP', 
-                 'ALA', 'VAL', 'GLU', 'MET', 'TYR']
+              'ILE', 'PRO', 'THR', 'CYS', 'PHE', 'ASN',
+              'GLY', 'HIS', 'LEU', 'ARG', 'TRP',
+              'ALA', 'VAL', 'GLU', 'MET', 'TYR']
 BINARY_CLASS_NAME = "binary_class"
 RAW_CLASS_NAME = "Classe"
 RES_NAME_COL = "PDBResName"
