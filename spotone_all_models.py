@@ -70,10 +70,10 @@ def prepare_file_split(input_name, amino_list=AMINO_LIST, \
         except:
             train = pd.concat([train, current_table_HS, current_table_NS], axis=0)
             continue
-        if start_merge == True:
+        if start_merge is True:
             train = pd.concat([train, HS_train, NS_train], axis=0)
             test = pd.concat([test, HS_test, NS_test], axis=0)
-        if start_merge == False:
+        if start_merge is False:
             train = pd.concat([HS_train, NS_train], axis=0)
             test = pd.concat([HS_test, NS_test], axis=0)
             start_merge = True
