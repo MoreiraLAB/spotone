@@ -10,14 +10,14 @@ The following repository pertains the code used to develop the back-end construc
 
 ## 2. Requirements
 To follow this pipeline you need to install:
-	- **psiblast** executable, along with the non-redundant (**nr**) dataset of proteins sequences, both made available by NCBI.
-	- **iFeature** package, available on *https://github.com/Superzchen/iFeature*
-	- Python packages **os**, **sys**, **pandas**, **string**, **sklearn**, **pickle** and **numpy**, most of which are available through standard Python installation with Anaconda. It is advised to create a Anaconda environment for this project.
+- **psiblast** executable, along with the non-redundant (**nr**) dataset of proteins sequences, both made available by NCBI.
+- **iFeature** package, available on *https://github.com/Superzchen/iFeature*
+- Python packages **os**, **sys**, **pandas**, **string**, **sklearn**, **pickle** and **numpy**, most of which are available through standard Python installation with Anaconda. It is advised to create a Anaconda environment for this project.
 
 The folder structure should include, inside the **spotone** folder:
-	- a **datasets** folder, to store your final datasets combinations.
-	- a **resources** folder, location of files **amino_properties.csv** and **encoding.csv**.
-	- a **results** folder, to output the iFeature results.
+- a **datasets** folder, to store your final datasets combinations.
+- a **resources** folder, location of files **amino_properties.csv** and **encoding.csv**.
+- a **results** folder, to output the iFeature results.
 
 ## 3. Setup
 
