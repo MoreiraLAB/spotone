@@ -1,0 +1,2 @@
+# Development/test installation, including optional reconstruction workflows.
+.[reconstruction]

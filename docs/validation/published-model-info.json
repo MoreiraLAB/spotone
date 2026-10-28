@@ -1,0 +1,28 @@
+{
+  "model_identity": "published-2020-extratrees-v1",
+  "source_pickle": "ensemble_model.pkl",
+  "source_sha256": "c6746cff126bb70218cd2d3ac91764ca629a9d405d415ed269e504e92712f3af",
+  "source_sklearn_version": "0.21.2",
+  "source_pickle_protocol": 3,
+  "estimator": "ExtraTreesClassifier",
+  "n_estimators": 500,
+  "n_features": 173,
+  "classes": [
+    0,
+    1
+  ],
+  "parameters": {
+    "criterion": "gini",
+    "max_depth": null,
+    "min_samples_split": 2,
+    "min_samples_leaf": 1,
+    "max_features": "auto",
+    "bootstrap": true,
+    "oob_score": false,
+    "random_state": 42,
+    "class_weight": "balanced_subsample"
+  },
+  "runtime_format": "published_model_v1.npz",
+  "runtime_sha256": "d73ffbd59684ccce83fea02fb2d32a129f71b8acd470ef29fb15ed45f41507d5",
+  "conversion": "numeric tree arrays only; no refit and no parameter changes"
+}

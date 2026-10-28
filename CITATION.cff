@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "Please cite the original SPOTONE paper. Version 0.4 modernizes the software while preserving the recovered deployed model behavior."
+title: "SPOTONE: hot SPOTs ON protein complexes with Extremely randomized trees via sequence-only features"
+type: software
+version: 0.4.0
+authors:
+  - family-names: Preto
+    given-names: A. J.
+  - family-names: Moreira
+    given-names: Irina S.
+repository-code: "https://github.com/MoreiraLAB/spotone"
+preferred-citation:
+  type: article
+  title: "SPOTONE: hot SPOTs ON protein complexes with Extremely randomized trees via sequence-only features"
+  authors:
+    - family-names: Preto
+      given-names: A. J.
+    - family-names: Moreira
+      given-names: Irina S.
+  journal: International Journal of Molecular Sciences
+  year: 2020
+  volume: 21
+  issue: 19
+  start: 7281
+  doi: 10.3390/ijms21197281

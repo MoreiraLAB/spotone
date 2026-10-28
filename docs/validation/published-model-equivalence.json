@@ -1,0 +1,18 @@
+{
+  "feature_equivalence": {
+    "rows": 20,
+    "features": 173,
+    "max_abs_difference": 1.1368683772161603e-13,
+    "exact_numeric_equal": false
+  },
+  "model_equivalence_random_matrix": {
+    "rows": 32,
+    "max_abs_difference": 0.0,
+    "exact_equal": true
+  },
+  "model_equivalence_actual_features": {
+    "rows": 20,
+    "max_abs_difference": 0.0,
+    "exact_equal": true
+  }
+}
