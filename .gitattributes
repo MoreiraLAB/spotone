@@ -1,0 +1,4 @@
+# Keep archived data and packaged snapshots byte-identical across platforms.
+# The original property tables use CRLF; carriage returns are intentional.
+*.csv -text whitespace=cr-at-eol
+*.fasta -text

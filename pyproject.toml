@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spotone"
+version = "0.4.0"
+description = "Reproducible sequence-only protein hot-spot classification with SPOTONE"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "MoreiraLAB"}]
+dependencies = [
+    "numpy>=1.26,<3",
+    "pandas>=2.1,<3",
+]
+
+[project.optional-dependencies]
+reconstruction = [
+    "scikit-learn>=1.4,<2",
+    "joblib>=1.3,<2",
+]
+
+
+[project.urls]
+Repository = "https://github.com/MoreiraLAB/spotone"
+Publication = "https://doi.org/10.3390/ijms21197281"
+
+[project.scripts]
+spotone = "spotone.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+spotone = ["data/*.csv", "data/*.fasta", "data/*.npz", "data/*.json"]
